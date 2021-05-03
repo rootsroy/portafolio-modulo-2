@@ -5,15 +5,17 @@
 }
 
 body {
-  background-color: #d9dcd6;
+  background-color: #333355;
+  color: #eeeeee;
+  margin: 0px;
 }
 
 .header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: #695ae0;
+  color: #85346c;
 }
 
 .header h1 {
@@ -22,7 +24,7 @@ body {
 }
 
 .header h1 .seo {
-  color: #d9dcd6;
+  color: #3db372;
 }
 
 .header nav {
@@ -61,12 +63,12 @@ p {
 }
 
 .float-left {
-  float: left;
+  /* float: left; */
   margin-right: 25px;
 }
 
 .float-right {
-  float: right;
+  /* float: right; */
   margin-left: 25px;
 }
 
@@ -84,7 +86,7 @@ p {
   width: 20%;
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #2589bd;
+  background-color: #576ff7;
 }
 
 .benefit-lead {
@@ -138,27 +140,27 @@ p {
 .search-engine-optimization {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  /* height: 300px; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: #b953ed;
   color: #ffffff;
 }
 
 .online-reputation-management {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  /* height: 300px; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: #9557f7;
   color: #ffffff;
 }
 
 .social-media-marketing {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  /* height: 300px; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
+  background-color: #b953ed;
   color: #ffffff;
 }
 
@@ -171,7 +173,8 @@ p {
 }
 
 .social-media-marketing img {
-  max-height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .search-engine-optimization h2 {
@@ -199,4 +202,56 @@ p {
 
 .footer h2 {
   font-size: 20px;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.padded {
+  padding: 0 2rem;
+}
+
+.gutters > .row {
+  margin-left: -1rem;
+}
+
+.gutters > .row > .column {
+  padding: 1rem 0 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .header nav {
+    float: none;
+  }
+
+  .benefits {
+    width: 100%;
+    float: none;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+  }
+  .benefit-lead {
+    text-align: center;
+  }
+  .benefit-cost {
+    text-align: center;
+  }
+  .benefit-brand {
+    text-align: center;
+  }
 }
